@@ -25,22 +25,18 @@ This is a tableau dashboard analyzing the top 250 highest rated movies of all ti
 <script type='text/javascript'>
   var divElement = document.getElementById('viz1697985349926');
   var vizElement = divElement.getElementsByTagName('object')[0];
-  if (divElement.offsetWidth > 800) {
-    vizElement.style.minWidth='1200px';
-    vizElement.style.maxWidth='1600px';
-    vizElement.style.width='100%';
-    vizElement.style.height='827px';
-  } else if (divElement.offsetWidth > 500) {
-    vizElement.style.minWidth='1200px';
-    vizElement.style.maxWidth='1600px';
-    vizElement.style.width='100%';
-    vizElement.style.height='827px';
-  } else {
-    vizElement.style.width='100%';
-    vizElement.style.height='2127px';
-  }
+  
+  vizElement.style.minWidth = '1200px';
+  vizElement.style.maxWidth = '1600px';
+  vizElement.style.width = '100%';
+  
+  vizElement.style.minHeight = '800px';
+  vizElement.style.maxHeight = '800px';
+  vizElement.style.height = '800px';
+  
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
+
 
